@@ -1,0 +1,1 @@
+# js-intern-test
