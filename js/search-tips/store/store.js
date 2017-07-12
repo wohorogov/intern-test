@@ -1,6 +1,6 @@
-import { createStore, applyMiddleware } from 'redux';
-import * as reducers from '../reducers/search-reducer';
-import data from '../data/words'
+import { createStore } from 'redux';
+import reducer from '../reducers';
+import data from '../data/words';
 
 let preloadedState = {
   words: data
@@ -9,6 +9,6 @@ let preloadedState = {
 
 const store = createStore(reducer, preloadedState);
 
-
 export { preloadedState };
+
 export default store;

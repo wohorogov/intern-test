@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     filename: '[name].js',
-    path: resolve(__dirname, 'build')
+    path: resolve(__dirname, 'build/')
   },
 
   module: {
@@ -28,10 +28,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  },
-  devServer: {
-    watchContentBase: true,
-    watch: true
   },
   plugins: []
 };
