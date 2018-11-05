@@ -12,7 +12,7 @@ func main() {
 		ancientCoord, _ := strconv.Atoi(args[1])
 		ulamPos := c.Sieve(ancientCoord)
 		if ulamPos == -1 {
-			println("Given coordinate is prime number!")
+			println("Given coordinate is a prime number!")
 		} else {
 			x, y := c.UlamToCartesian(ulamPos)
 			println(x, y)
