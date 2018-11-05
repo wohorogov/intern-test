@@ -19,18 +19,13 @@ func Sieve(pos int) (ulamPos int) {
 				nums[i] = 0
 			}
 		}
-		j := 0
-		g := 0
 		for k := 3; int(math.Pow(float64(k), 2)) <= pos; k += 2 {
 			if nums[k] == 1 {
 				for l := int(math.Pow(float64(k), 2)); l <= pos; l += 2 * k {
 					nums[l] = 0
-					g++
 				}
 			}
-			j++
 		}
-		println(j + g)
 		if nums[pos] == 1 {
 			ulamPos = -1
 		} else {

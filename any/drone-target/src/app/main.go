@@ -11,7 +11,6 @@ func main() {
 	if len(args) > 1 {
 		ancientCoord, _ := strconv.Atoi(args[1])
 		ulamPos := c.Sieve(ancientCoord)
-		println(ulamPos)
 		if ulamPos == -1 {
 			println("Given coordinate is prime number!")
 		} else {
