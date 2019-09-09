@@ -1,0 +1,20 @@
+# OSX
+#
+.DS_Store
+
+# Android
+*.iml
+.gradle
+.idea
+*.log
+local.properties
+/captures
+/build
+.externalNativeBuild
+*.aab
+*.apk
+build
+
+# VSCode
+#
+jsconfig.json
